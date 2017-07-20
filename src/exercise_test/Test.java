@@ -3,6 +3,7 @@ package exercise_test;
 import java.util.Arrays;
 
 import exercise_sort_bubble.Bubble;
+import exercise_sort_heap.Heap;
 import exercise_sort_impl.Sort;
 import exercise_sort_insertion.Insertion;
 import exercise_sort_merge.Merge;
@@ -39,6 +40,7 @@ public class Test {
 //		test(new Insertion(), array);
 //		test(new Bubble(), array);
 //		test(new Shell(), array);
-		test(new Merge(), array);
+//		test(new Merge(), array);
+		test(new Heap(), array);
 	}
 }
