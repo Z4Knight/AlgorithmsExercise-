@@ -1,17 +1,19 @@
 package exercise_test;
 
-import java.util.Arrays;
-
 import exercise_sort_bubble.Bubble;
 import exercise_sort_heap.Heap;
 import exercise_sort_impl.Sort;
 import exercise_sort_insertion.Insertion;
 import exercise_sort_merge.Merge;
+import exercise_sort_quick.Quick;
 import exercise_sort_selection.Selection;
 import exercise_sort_shell.Shell;
-
+/**
+ * À„∑®≤‚ ‘≥Ã–Ú
+ * @author Z4Knight
+ *
+ */
 public class Test {
-	
 	public static void printArray(int[] array) {
 		StringBuilder b = new StringBuilder();
 		b.append("[");
@@ -41,6 +43,7 @@ public class Test {
 //		test(new Bubble(), array);
 //		test(new Shell(), array);
 //		test(new Merge(), array);
-		test(new Heap(), array);
+//		test(new Heap(), array);
+		test(new Quick(), array);
 	}
 }

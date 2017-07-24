@@ -1,7 +1,11 @@
 package exercise_sort_heap;
 
 import exercise_sort_impl.Sort;
-
+/**
+ * 堆排序，采用下沉使得堆有序
+ * @author Z4Knight
+ *
+ */
 public class Heap implements Sort {
 
 	// 从上至下使得堆有序

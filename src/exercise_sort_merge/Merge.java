@@ -1,7 +1,11 @@
 package exercise_sort_merge;
 
 import exercise_sort_impl.Sort;
-
+/**
+ * 归并排序，采用自顶向下
+ * @author Z4Knight
+ *
+ */
 public class Merge implements Sort{
 	// 创建归并所需的额外数组
 	private int[] aux;
