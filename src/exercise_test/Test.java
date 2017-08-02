@@ -6,6 +6,7 @@ import exercise_sort_impl.Sort;
 import exercise_sort_insertion.Insertion;
 import exercise_sort_merge.Merge;
 import exercise_sort_quick.Quick;
+import exercise_sort_quick.Quick3way;
 import exercise_sort_selection.Selection;
 import exercise_sort_shell.Shell;
 /**
@@ -36,14 +37,15 @@ public class Test {
 	}
 	
 	public static void main(String[] args) {
-		int [] array = {1,5,7,15,9,10,5,3,4,7,8,9,45,10};
-		
+		int [] array = {9,5,7,75,8,4,3,8,7,6,15,45};
+
 //		test(new Selection(), array);
 //		test(new Insertion(), array);
 //		test(new Bubble(), array);
 //		test(new Shell(), array);
 //		test(new Merge(), array);
 //		test(new Heap(), array);
-		test(new Quick(), array);
+//		test(new Quick(), array);
+		test(new Quick3way(), array);
 	}
 }

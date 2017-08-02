@@ -37,7 +37,7 @@ public class Quick implements Sort{
 		int k = a[lo];
 		while (true) {
 			// 扫描左右，检查是否结束并交换元素
-			while (a[i++] < k) {
+			while (a[++i] < k) {
 				if (i >= hi) {
 					break;
 				}

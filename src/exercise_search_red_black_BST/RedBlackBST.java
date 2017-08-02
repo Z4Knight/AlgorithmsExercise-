@@ -1,5 +1,11 @@
 package exercise_search_red_black_BST;
-
+/**
+ * 红黑树，只实现了插入操作
+ * @author Z4Knight
+ *
+ * @param <Key> 插入键
+ * @param <Value> 插入键对应的值
+ */
 public class RedBlackBST<Key extends Comparable<Key>, Value> {
 
 	// 将颜色值设为常量
