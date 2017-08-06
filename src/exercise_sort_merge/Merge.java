@@ -26,7 +26,7 @@ public class Merge implements Sort{
 				a[k] = aux[j++];
 			} else if (j > hi) {
 				a[k] = aux[i++];
-			} else if (a[i] > a[j]) {
+			} else if (aux[i] > aux[j]) {
 				a[k] = aux[j++];
 			} else {
 				a[k] = aux[i++];

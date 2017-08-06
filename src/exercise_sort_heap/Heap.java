@@ -14,17 +14,15 @@ public class Heap implements Sort {
 			// 记录 k 的子节点
 			int j = 2*k;
 			// 找出子节点中更大者
-			if (j < n && (a[j] < a[j+1])) {
+			if (j < n && (a[j-1] < a[j])) {
 				j++;
 			}
 			// k 比两个子节点都大，则不做处理
-			if (!(a[k] < a[j])) {
-				break;
+			if (!(a[k-1] < a[j-1])) {
+				break;	
 			}
 			// 否则交换 k 和子节点的位置
-			int t = a[k];
-			a[k] = a[j];
-			a[j] = t;
+			exch(a, j, k);
 			k = j;
 		}
 
@@ -32,14 +30,14 @@ public class Heap implements Sort {
 
 	
 	private void exch(int[] a, int i, int k) {
-		int t = a[i];
-		a[i] = a[k];
-		a[k] = t;
+		int t = a[i-1];
+		a[i-1] = a[k-1];
+		a[k-1] = t;
 	}
 	
 	@Override
 	public void sort(int[] a) {
-		int n = a.length - 1;
+		int n = a.length;
 		// 构建堆有序
 		for (int k = n/2; k >= 1; k--) {
 			sink(a, k, n);
