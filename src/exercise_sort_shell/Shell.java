@@ -12,7 +12,7 @@ public class Shell implements Sort{
 	@Override
 	public void sort(int[] array) {
 		int n = array.length;
-		// 定义分隔标识
+		// 定义步进长度
 		int h = 1;
 		// 创建一个递增序列
 		while (h < n/3) {
